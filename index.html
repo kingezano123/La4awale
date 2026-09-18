@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>la4awale Clicker</title>
+<meta name="description" content="Click la4awale, buy upgrades, and build the la4awale empire.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stars"></div>
+<header class="topbar">
+  <div class="logo">la4awale <span>CLICKER</span></div>
+  <div class="save-pill">AUTOSAVE ON</div>
+</header>
+
+<main class="game">
+  <section class="left">
+    <div class="score-wrap">
+      <p>LA4AWALES</p>
+      <h1 id="score">0</h1>
+      <div class="statrow">
+        <div><span>PER CLICK</span><b id="perClick">1</b></div>
+        <div><span>PER SECOND</span><b id="perSecond">0</b></div>
+        <div><span>CLICKS</span><b id="clicks">0</b></div>
+      </div>
+    </div>
+
+    <button id="mainClick" class="portrait-button" aria-label="Click la4awale">
+      <span class="halo"></span>
+      <img src="assets/la4awale.jpg" alt="la4awale">
+      <span class="click-label">CLICK LA4AWALE</span>
+    </button>
+
+    <p class="tagline">CLICK • UPGRADE • REPEAT</p>
+
+    <div class="actions">
+      <button id="saveBtn" class="secondary">Save</button>
+      <button id="resetBtn" class="secondary danger">Reset</button>
+    </div>
+  </section>
+
+  <aside class="shop">
+    <div class="shop-head">
+      <div>
+        <small>BUILD THE EMPIRE</small>
+        <h2>Upgrades</h2>
+      </div>
+      <span>👑</span>
+    </div>
+    <div id="shopList"></div>
+  </aside>
+</main>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
